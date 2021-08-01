@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+h1 {
+  color: white;
+}
+
 body {
   background: #33374b;
 }
