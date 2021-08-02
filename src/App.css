@@ -12,7 +12,7 @@ body {
   background: #33374b;
 }
 
-.home, .fibonacci {
+.home, .fibonacci, .collatz {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Fibonacci.css';
 
-function Fibonacci() {
+const Fibonacci = () => {
   const [numberInput, setNumberInput] = useState(0);
   const [sequence, setSequence] = useState([]);
   const [status, setStatus] = useState('');
@@ -69,5 +69,5 @@ function Fibonacci() {
 
     </>
   );
-}
+};
 export default Fibonacci;
