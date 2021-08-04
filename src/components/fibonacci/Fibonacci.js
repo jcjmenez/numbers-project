@@ -42,7 +42,7 @@ const Fibonacci = () => {
       <div className="status">
         <p>{status}</p>
       </div>
-      <div className="input-field">
+      <div className="form-field">
         <p>Input a number to calculate its fibonacci sequence</p>
         <form onSubmit={(event) => {
           event.preventDefault();

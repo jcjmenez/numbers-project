@@ -20,7 +20,7 @@ function Sidebar() {
         </div>
         <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
           <ul className="sidebar-menu-items">
-            <li><AiIcons.AiOutlineClose className="sidebar-text exit" onClick={showSidebar} /></li>
+            <li className="sidebar-text exit"><AiIcons.AiOutlineClose onClick={showSidebar} /></li>
             {SidebarData.map((data) => (
               <li key={data.id} className={data.className}>
                 <Link to={data.path} onClick={showSidebar}>

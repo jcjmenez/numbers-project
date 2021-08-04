@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Redirect, Route, Switch,
+} from 'react-router-dom';
 import './App.css';
 import Home from './components/home/Home';
 import Fibonacci from './components/fibonacci/Fibonacci';
@@ -16,6 +18,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/fibonacci" component={Fibonacci} />
             <Route path="/collatz" component={Collatz} />
+            <Redirect from="/" to="/" />
           </Switch>
         </Router>
       </div>

@@ -10,6 +10,7 @@ const SidebarData = [
     path: '/#',
     icon: <AiIcons.AiFillHome />,
     className: 'sidebar-text',
+    wiki: '',
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const SidebarData = [
     path: '/fibonacci',
     icon: <SiIcons.SiGraphcool />,
     className: 'sidebar-text',
+    wiki: 'https://en.wikipedia.org/wiki/Fibonacci_number',
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const SidebarData = [
     path: '/collatz',
     icon: <BiIcons.BiLineChartDown />,
     className: 'sidebar-text',
+    wiki: 'https://en.wikipedia.org/wiki/Collatz_conjecture',
   },
 ];
 

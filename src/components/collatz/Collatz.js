@@ -37,7 +37,7 @@ const Collatz = () => {
         label: 'Value',
         fill: false,
         lineTension: 0,
-        backgroundColor: 'rgba(75,192,192,1)',
+        backgroundColor: 'rgba(122,192,192,1)',
         borderColor: 'rgba(0,0,0,1)',
         borderWidth: 2,
         data: values,
@@ -55,27 +55,30 @@ const Collatz = () => {
       <div className="collatz">
         <h1>Collatz conjecture</h1>
       </div>
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        calculateCollatz(numberInput);
-      }}
-      >
-        <input
-          placeholder="0"
-          type="number"
-          value={numberInput}
-          onChange={handleNumberChange}
-        />
-        <br />
-        <button type="submit">Calculate</button>
-      </form>
+      <div className="form-field">
+        <p>Input a number to calculate its collatz sequence</p>
+        <form onSubmit={(event) => {
+          event.preventDefault();
+          calculateCollatz(numberInput);
+        }}
+        >
+          <input
+            placeholder="0"
+            type="number"
+            value={numberInput}
+            onChange={handleNumberChange}
+          />
+          <br />
+          <button type="submit">Calculate</button>
+        </form>
+      </div>
       <div className="chart">
         <Line
           data={state}
           options={{
             title: {
               display: true,
-              text: 'Average Rainfall per month',
+              text: 'Collatz conjecture visualization',
               fontSize: 20,
             },
             legend: {
@@ -89,4 +92,5 @@ const Collatz = () => {
     </>
   );
 };
+
 export default Collatz;
